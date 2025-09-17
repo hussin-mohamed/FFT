@@ -79,10 +79,11 @@ The FFT is a fundamental block in **signal processing**, widely used in communic
 
 ```mermaid
 flowchart TD
-    A[Modeling in MATLAB] --> B["Architecture Design - Advanced SDC"]
-    B --> C[RTL Implementation (Verilog)]
+    A["Modeling in MATLAB"] --> B["Architecture Design - Advanced SDC"]
+    B --> C["RTL Implementation in Verilog"]
     C --> D["Verification (SystemVerilog + MATLAB reference)"]
-    D --> E[Synthesis - Cadence Genus]
-    E --> F[Place & Route - Cadence Innovus]
+    D --> E["Synthesis - Cadence Genus"]
+    E --> F["Place & Route - Cadence Innovus"]
     F --> G["STA - Tempus & Power - Voltus"]
-    G --> H[Final GDSII for ASIC]
+    G --> H["Final GDSII for ASIC"]
+
